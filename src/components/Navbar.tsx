@@ -33,9 +33,9 @@ const Navbar = () => {
 					<span> +91 8913 222 749 </span>
 				</div>
 
-				<Link href={user ? '/login' : '/orders'}>
+				<Link href={!user ? '/login' : '/orders'}>
 					{' '}
-					{user ? 'Login' : 'Orders'}{' '}
+					{!user ? 'Login' : 'Orders'}{' '}
 				</Link>
 
 				<CartIcon />
