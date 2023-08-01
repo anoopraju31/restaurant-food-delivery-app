@@ -8,3 +8,7 @@
     --slider-height-sm: calc(100vh - 6rem);
     --slider-height-lg: calc(100vh - 9rem);
 }
+
+.featured::-webkit-scrollbar {
+    display: none;
+}
