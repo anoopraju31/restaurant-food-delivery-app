@@ -31,9 +31,8 @@ const Menu = () => {
 					<Link href={user ? '/orders' : 'login'}>
 						{user ? 'Orders' : 'Login'}
 					</Link>
-					<Link href='/cart'>
-						<CartIcon />
-					</Link>
+
+					<CartIcon />
 				</div>
 			) : null}
 		</div>
