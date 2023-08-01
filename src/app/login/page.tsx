@@ -14,7 +14,7 @@ const LoginPage = () => {
 						src='/login/loginBg.png'
 						alt=''
 						fill
-						className='object-cover rounded-2xl'
+						className='object-cover rounded-l-2xl'
 					/>
 				</div>
 
