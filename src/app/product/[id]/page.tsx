@@ -1,3 +1,4 @@
+import { Price } from '@/components'
 import { singleProduct } from '@/utills/productDetails'
 import Image from 'next/image'
 import React from 'react'
@@ -22,6 +23,7 @@ const SingleProductPage = () => {
 					{singleProduct.title}
 				</h1>
 				<p>{singleProduct.desc}</p>
+				<Price />
 			</div>
 		</section>
 	)
