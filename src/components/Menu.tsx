@@ -1,6 +1,7 @@
-import { menuLinks } from '@/utills/links'
 import Link from 'next/link'
 import { BiMenuAltLeft } from 'react-icons/bi'
+import { menuLinks } from '@/utills/links'
+import { CartIcon } from '.'
 
 const Menu = () => {
 	// ! Temporary User
@@ -22,7 +23,9 @@ const Menu = () => {
 				<Link href={user ? '/orders' : 'login'}>
 					{user ? 'Orders' : 'Login'}
 				</Link>
-				<Link href='/cart'>CartIcon</Link>
+				<Link href='/cart'>
+					<CartIcon />
+				</Link>
 			</div>
 		</div>
 	)
