@@ -1,11 +1,13 @@
-type Menu = {
+export type Category = {
 	id: number
 	slug: string
 	title: string
-	desc?: string
-	img?: string
+	desc: string
+	img: string
 	color: string
-}[]
+}
+
+export type Menu = Category[]
 
 export const menu: Menu = [
 	{
