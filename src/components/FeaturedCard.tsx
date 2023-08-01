@@ -14,7 +14,12 @@ const FeaturedCard = ({ id, title, desc, img, price }: Props) => {
 		<div className='w-screen md:w-[50vw] xl:w-[33vw] h-[60vh] xl:h-[90vh] inline-flex flex-col items-center justify-around p-4 hover:bg-fuchsia-50 transition-all duration-300'>
 			{/* Image Container */}
 			<div className='relative px-6 flex-1 w-full hover:rotate-[60deg] transition-all duration-500'>
-				<Image src={img} alt='' fill className='object-contain' />
+				<Image
+					src={img}
+					alt=''
+					fill
+					className='object-contain pointer-events-none'
+				/>
 			</div>
 
 			{/* Text Container */}
