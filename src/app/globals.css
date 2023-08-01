@@ -7,8 +7,34 @@
     --menu-height-sm: calc(100vh - 6rem);
     --slider-height-sm: calc(100vh - 6rem);
     --slider-height-lg: calc(100vh - 9rem);
+    --order-height-sm: calc(100vh - 11rem);
+    --order-height-lg: calc(100vh - 14rem);
 }
 
 .featured::-webkit-scrollbar {
     display: none;
+}
+
+/* body */
+/* body::-webkit-scrollbar-track {
+	background-color: #EF4444;
+} */
+
+body::-webkit-scrollbar {
+	width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+	background-color: #ef4444;
+}
+
+/* orders */
+.orders::-webkit-scrollbar {
+	width: 4px;
+}
+
+.orders::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+	background-color: #EF4444;
 }
