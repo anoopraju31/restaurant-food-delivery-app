@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Menu from './Menu'
 
 const Navbar = () => {
 	return (
@@ -10,7 +11,9 @@ const Navbar = () => {
 			</div>
 
 			{/* Menu */}
-			<div>Menu</div>
+			<div>
+				<Menu />
+			</div>
 		</header>
 	)
 }
