@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { FeaturedCard } from '.'
+import { featuredProducts } from '@/utills/featured'
 
 const Featured = () => {
 	return (
@@ -8,7 +9,9 @@ const Featured = () => {
 			{/* Wrapper */}
 			<div className='w-max'>
 				{/* Single Featured Items */}
-				<FeaturedCard />
+				{featuredProducts.map((product) => (
+					<FeaturedCard key={product.id} {...product} />
+				))}
 			</div>
 		</section>
 	)
